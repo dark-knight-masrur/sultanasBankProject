@@ -41,11 +41,21 @@
 
                 <!-- customer action button -->
 
-                <div>
+                <div class="grid grid-cols-3 gap-4">
                     <button id="btn-show-addmoney-clicked"
                         class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Add money</button>
                     <button id="btn-show-cashout-clicked"
                         class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">cashout</button>
+                    <button id="btn-show-transfermoney-clicked"
+                        class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Transfer
+                        Money</button>
+                    <button id="btn-show-getbonus-clicked"
+                        class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Get
+                        Bonus</button>
+                    <button id="btn-show-payBill-clicked" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Pay
+                        Bill</button>
+                    <button id="btn-show-transiction-clicked"
+                        class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Trasiction</button>
                 </div>
 
                 <div class="divider"></div> <!--added a horizontal devider-->
@@ -78,14 +88,76 @@
                         <button id="btnCashout" class="btn btn-outline btn-secondary">Cashout</button>
                     </fieldset>
                 </div>
-                <!-- cashout start  -->
+                <!-- cashout end  -->
+
+                <!-- transfermoney start  -->
+
+                <div id="transfermoney-form" class="card-body hidden">
+                    <fieldset class="fieldset">
+                        <label class="label">Amount</label>
+                        <input id="transfermoney-field" type="number" class="input"
+                            placeholder="Enter your transfermoney Amount" />
+                        <label class="label">Pin</label>
+                        <input id="transfermoney-pin-field" type="password" class="input" placeholder="Enter your Pin"
+                            autocomplete="off" />
+                        <button id="btntransfermoney" class="btn btn-outline btn-secondary">transfer Money</button>
+                    </fieldset>
+                </div>
+                <!-- transfer end  -->
+
+                <!-- getbonus start  -->
+
+                <div id="getbonus-form" class="card-body hidden">
+                    <fieldset class="fieldset">
+                        <label class="label">Amount</label>
+                        <input id="getbonus-field" type="number" class="input"
+                            placeholder="Enter your getbonus Amount" />
+                        <label class="label">Pin</label>
+                        <input id="getbonus-pin-field" type="password" class="input" placeholder="Enter your Pin"
+                            autocomplete="off" />
+                        <button id="btngetbonus" class="btn btn-outline btn-secondary">Get Bonus</button>
+                    </fieldset>
+                </div>
+                <!-- getbonus end  -->
+
+                <!-- paybill start  -->
+
+                <div id="paybill-form" class="card-body hidden">
+                    <fieldset class="fieldset">
+                        <label class="label">Amount</label>
+                        <input id="paybill-field" type="number" class="input" placeholder="Enter your paybill Amount" />
+                        <label class="label">Pin</label>
+                        <input id="paybill-pin-field" type="password" class="input" placeholder="Enter your Pin"
+                            autocomplete="off" />
+                        <button id="btnpaybill" class="btn btn-outline btn-secondary">pay bill</button>
+                    </fieldset>
+                </div>
+                <!-- paybill end  -->
+
+                <!-- trasiction start  -->
+
+                <div id="trasiction-form" class="card-body hidden">
+                    <fieldset class="fieldset">
+                        <label class="label">Amount</label>
+                        <input id="trasiction-field" type="number" class="input"
+                            placeholder="Enter your trasiction Amount" />
+                        <label class="label">Pin</label>
+                        <input id="trasiction-pin-field" type="password" class="input" placeholder="Enter your Pin"
+                            autocomplete="off" />
+                        <button id="btntrasiction" class="btn btn-outline btn-secondary">trasiction</button>
+                    </fieldset>
+                </div>
+                <!-- trasiction end  -->
 
             </div>
     </main>
 
+
     <script src="addMoney.js"></script>
     <script src="cashout.js"></script>
     <script src="featured.js"></script>
+    <script src="utilities.js"></script>
+    <script src="transiction.js"></script>
 </body>
 </body>
 

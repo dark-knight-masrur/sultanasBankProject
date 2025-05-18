@@ -1,16 +1,16 @@
 //add money to account
 
 //step: 1 added a event handler on add money button
-document.getElementById('btnCashout').addEventListener('click', function (event) {
+document.getElementById('btntransfermoney').addEventListener('click', function (event) {
     event.preventDefault();//to prevent loading the page
 
     //step 2: checking the amount and password
-    const cashoutField = getInputElementById('cashout-field')
-    const cashoutPinField = getInputElementById('cashout-pin-field')
+    const transfermoneyField = getInputElementById('transfermoney-field')
+    const transfermoneyPinField = getInputElementById('transfermoney-pin-field')
 
     //step 3: verifying the pin and the amount
 
-    if (cashoutPinField === 5392) {
+    if (transfermoneyPinField === 5392) {
 
         // get the current balance 
         const currentBalance = getTextFeildById('current-balance')
@@ -21,7 +21,7 @@ document.getElementById('btnCashout').addEventListener('click', function (event)
 
 
 
-        const totalUpdatedBalance2 = currentBalance - cashoutField;
+        const totalUpdatedBalance2 = currentBalance - transfermoneyField;
         console.log(totalUpdatedBalance2);
 
 

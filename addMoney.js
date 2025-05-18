@@ -5,33 +5,30 @@ document.getElementById('btnAddMoney').addEventListener('click', function (event
     event.preventDefault();//to prevent loading the page
 
     //step 2: checking the amount and password
-    const addMoneyField = document.getElementById('add-money-field').value
-    const addPinField = document.getElementById('add-pin-field').value
+    const addMoneyField = getInputElementById('add-money-field')
+    const addPinField = getInputElementById('add-pin-field')
+    console.log(addMoneyField, addPinField);
+
 
     //step 3: verifying the pin and the amount
 
-    if (addPinField === '5392') {
+    if (addPinField === 5392) {
 
         // get the current balance 
-        const currentBalance = document.getElementById('current-balance').innerText
+        const currentBalance = getTextFeildById('current-balance')
         console.log(currentBalance);
 
 
         // step 5: add new amount to current balance 
 
-        const addMoneyFieldNumber = parseFloat(addMoneyField) //converting the string to number
 
-        console.log(addMoneyFieldNumber);
-
-        const currentBalanceNumber = parseFloat(currentBalance)//converting the string to number
-        console.log(currentBalanceNumber);
-
-        const totalUpdatedBalance = addMoneyFieldNumber + currentBalanceNumber;
+        const totalUpdatedBalance = addMoneyField + currentBalance;
         console.log(totalUpdatedBalance);
 
 
         //update the balance by dom in available balance
         document.getElementById('current-balance').innerText = totalUpdatedBalance;
+
 
     } else {
         alert('wrong ammount or pin')
