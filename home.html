@@ -24,12 +24,12 @@
                 <!-- top section  -->
 
                 <div class="">
-                    <!-- avail able balance  -->
+                    <!-- available balance  -->
 
                     <div class="stats shadow">
                         <div class="stat">
-                            <div class="stat-value">89,400</div>
-                            <div class="stat-desc">21% more than last month</div>
+                            <div id="current-balance" class="stat-value">89400</div>
+                            <div class="stat-desc">Available Balance</div>
                         </div>
                     </div>
 
@@ -42,27 +42,51 @@
                 <!-- customer action button -->
 
                 <div>
-                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Add money</button>
-                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">cashout</button>
+                    <button id="btn-show-addmoney-clicked"
+                        class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Add money</button>
+                    <button id="btn-show-cashout-clicked"
+                        class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">cashout</button>
                 </div>
 
                 <div class="divider"></div> <!--added a horizontal devider-->
 
 
                 <!-- action required form  -->
-                <div class="card-body">
+
+                <!-- add money start  -->
+                <div id="addmoney-form" class="card-body hidden">
                     <fieldset class="fieldset">
                         <label class="label">Amount</label>
-                        <input type="email" class="input" placeholder="Enter your Amount" />
-                        <label class="label">Password</label>
-                        <input type="password" class="input" placeholder="Enter your Password" autocomplete="off" />
-                        <button class="btn btn-outline btn-secondary">Secondary</button>
+                        <input id="add-money-field" type="number" class="input" placeholder="Enter your Amount" />
+                        <label class="label">Pin</label>
+                        <input id="add-pin-field" type="password" class="input" placeholder="Enter your Pin"
+                            autocomplete="off" />
+                        <button id="btnAddMoney" class="btn btn-outline btn-secondary">Add money</button>
                     </fieldset>
                 </div>
+                <!-- add money end  -->
+
+                <!-- cashout start  -->
+
+                <div id="cashout-form" class="card-body hidden">
+                    <fieldset class="fieldset">
+                        <label class="label">Amount</label>
+                        <input id="cashout-field" type="number" class="input" placeholder="Enter your Cashout Amount" />
+                        <label class="label">Pin</label>
+                        <input id="cashout-pin-field" type="password" class="input" placeholder="Enter your Pin"
+                            autocomplete="off" />
+                        <button id="btnCashout" class="btn btn-outline btn-secondary">Cashout</button>
+                    </fieldset>
+                </div>
+                <!-- cashout start  -->
+
             </div>
     </main>
 
-    <script src="home.js"></script>
+    <script src="addMoney.js"></script>
+    <script src="cashout.js"></script>
+    <script src="featured.js"></script>
+</body>
 </body>
 
 </html>
