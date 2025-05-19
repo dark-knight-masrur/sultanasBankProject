@@ -28,6 +28,16 @@ document.getElementById('btnCashout').addEventListener('click', function (event)
         //update the balance by dom in available balance
         document.getElementById('current-balance').innerText = totalUpdatedBalance2;
 
+        //add the transiction history to button of transiction
+
+        const addTransiction = document.getElementById('transiction-container').innerHTML = `
+        <div class="bg-yellow-500 text-center">
+                    <h2 class="text-4xl ">Cash out</h2>
+                    <p class="text-red-600">Added Money: ${cashoutField}, Total Updated Balance: ${totalUpdatedBalance2}
+                    </p>
+        
+                `
+
     } else {
         alert('wrong ammount or pin')
     }

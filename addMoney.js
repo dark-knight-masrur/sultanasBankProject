@@ -29,6 +29,11 @@ document.getElementById('btnAddMoney').addEventListener('click', function (event
         //update the balance by dom in available balance
         document.getElementById('current-balance').innerText = totalUpdatedBalance;
 
+        //update to transiction history
+
+        const p = document.createElement('p')
+        p.innerText = `Added Money: ${addMoneyField}, Total Updated Balance: ${totalUpdatedBalance}`;
+        document.getElementById('transiction-container').appendChild(p)
 
     } else {
         alert('wrong ammount or pin')

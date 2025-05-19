@@ -20,10 +20,10 @@ function showSectionById(id) {
     //hide all idd
     document.getElementById('addmoney-form').classList.add('hidden')
     document.getElementById('cashout-form').classList.add('hidden')
-    document.getElementById('transfermoney-form').classList.add('hidden')
+    // document.getElementById('transfermoney-form').classList.add('hidden')
     // document.getElementById('getbonus-form').classList.add('hidden')
     // document.getElementById('payBill-form').classList.add('hidden')
-    // document.getElementById('transiction-form').classList.add('hidden')
+    document.getElementById('transiction-form').classList.add('hidden')
 
     //show that id that needed
     document.getElementById(id).classList.remove('hidden')
