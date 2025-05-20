@@ -21,3 +21,8 @@ document.getElementById('btn-show-transiction-clicked').addEventListener('click'
 
 })
 
+document.getElementById('btn-show-special-clicked').addEventListener('click', function () {
+
+    showSectionById('special-form')
+
+})

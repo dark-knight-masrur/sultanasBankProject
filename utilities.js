@@ -24,7 +24,9 @@ function showSectionById(id) {
     // document.getElementById('getbonus-form').classList.add('hidden')
     // document.getElementById('payBill-form').classList.add('hidden')
     document.getElementById('transiction-form').classList.add('hidden')
+    document.getElementById('special-form').classList.add('hidden')
 
     //show that id that needed
     document.getElementById(id).classList.remove('hidden')
 }
+

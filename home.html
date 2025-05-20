@@ -35,30 +35,37 @@
 
                     <!-- log out  -->
 
+                    <!-- </div> -->
+                    <div class="divider"></div> <!--added a horizontal devider -->
+
+
+                    <!-- customer action button -->
+
+                    <div class="grid grid-cols-3 gap-4 space-y-2 ">
+                        <button id="btn-show-addmoney-clicked"
+                            class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl btn-outline btn-primary text-xl">Add
+                            money</button>
+                        <button id="btn-show-cashout-clicked"
+                            class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl btn-outline btn-warning text-xl">cashout</button>
+                        <!-- <button id="btn-show-transfermoney-clicked"
+                            class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Transfer
+                            Money</button>
+                        <button id="btn-show-getbonus-clicked"
+                            class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Get
+                            Bonus</button>
+                        <button id="btn-show-payBill-clicked"
+                            class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Pay
+                            Bill</button> -->
+                        <button id="btn-show-transiction-clicked"
+                            class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl btn-outline btn-info text-xl">Transaction</button>
+                    </div>
+
+                    <button id="btn-show-special-clicked"
+                        class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl btn-outline border-[#9333ea] text-[#9333ea] hover:bg-[#9333ea] hover:text-white text-xl">Specially
+                        for you</button>
                 </div>
-                <div class="divider"></div> <!--added a horizontal devider-->
 
-
-                <!-- customer action button -->
-
-                <div class="grid grid-cols-3 gap-4">
-                    <button id="btn-show-addmoney-clicked"
-                        class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Add money</button>
-                    <button id="btn-show-cashout-clicked"
-                        class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">cashout</button>
-                    <!-- <button id="btn-show-transfermoney-clicked"
-                        class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Transfer
-                        Money</button>
-                    <button id="btn-show-getbonus-clicked"
-                        class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Get
-                        Bonus</button>
-                    <button id="btn-show-payBill-clicked" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Pay
-                        Bill</button> -->
-                    <button id="btn-show-transiction-clicked"
-                        class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Trasiction</button>
-                </div>
-
-                <div class="divider"></div> <!--added a horizontal devider-->
+                <div class="divider"></div><!-- added a horizontal devider -->
 
 
                 <!-- action required form  -->
@@ -94,26 +101,52 @@
 
                 <div id="transiction-form" class="card-body text-center hidden">
                     <h3 class="text-3xl font-bold">Transiction History</h3>
-                    <div id="transiction-container" class="">
-
+                    <div id="transiction-container" class="text-green-500 space-y-3">
 
                     </div>
                 </div>
                 <!-- transiction end  -->
 
+                <!-- special start -->
+                <div id="special-form" class="card-body text-center hidden">
+                    <h3 class="text-3xl font-bold text-purple-400">My dear Sultana Madam,</h3>
+                    <div class="text-green-500 space-y-3 text-justify text-xl">
+
+
+                        You know it's too hard for me understanding the mathematcial algoridom,
+                        You Know I'm very week in math. <br>
+                        But in some day, i tortured to my brain to understand this. because, there is no go back, no
+                        alternative to make a good career.
+
+                        you know, you can't change a man, but a man can change for you, he can break himself for you, he
+                        can do the beyond of his capacity.<br>
+
+                        so, i want to clear you that, you can trust me that i can do anything for you, for our good
+                        future <br>
+
+                        In Sha Allah
+
+                    </div>
+                </div>
 
             </div>
-        </div>
+
     </main>
 
 
     <script src="addMoney.js"></script>
+
     <script src="cashout.js"></script>
     <script src="featured.js"></script>
     <script src="utilities.js"></script>
-    <!-- <script src="transiction.js"></script> -->
+    <script src="transiction.js"></script>
 
-</body>
+
+
+
+
+
+
 </body>
 
 </html>

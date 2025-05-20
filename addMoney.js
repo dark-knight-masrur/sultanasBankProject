@@ -9,6 +9,14 @@ document.getElementById('btnAddMoney').addEventListener('click', function (event
     const addPinField = getInputElementById('add-pin-field')
     console.log(addMoneyField, addPinField);
 
+    //preventing the text without number
+    if (isNaN(addMoneyField)) {
+        alert('Go to hell, Put number')
+        return;
+    }
+
+
+
 
     //step 3: verifying the pin and the amount
 
@@ -18,6 +26,10 @@ document.getElementById('btnAddMoney').addEventListener('click', function (event
         const currentBalance = getTextFeildById('current-balance')
         console.log(currentBalance);
 
+        if (addMoneyField > 100000) {
+            alert('itna paisa hum tumko nehi denge, ab vago ehase')
+            return;
+        }
 
         // step 5: add new amount to current balance 
 
@@ -30,10 +42,16 @@ document.getElementById('btnAddMoney').addEventListener('click', function (event
         document.getElementById('current-balance').innerText = totalUpdatedBalance;
 
         //update to transiction history
+        const div = document.createElement('div')
 
-        const p = document.createElement('p')
-        p.innerText = `Added Money: ${addMoneyField}, Total Updated Balance: ${totalUpdatedBalance}`;
-        document.getElementById('transiction-container').appendChild(p)
+        div.innerHTML = `
+        <div class="bg-purple-500 text-center">
+                    <h2 class="text-4xl ">add money</h2>
+                    <p class="text-white">Added Money: ${addMoneyField}, Total Updated Balance: ${totalUpdatedBalance}
+                    </p>
+        </div>
+                `
+        document.getElementById('transiction-container').appendChild(div)
 
     } else {
         alert('wrong ammount or pin')
