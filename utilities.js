@@ -30,3 +30,8 @@ function showSectionById(id) {
     document.getElementById(id).classList.remove('hidden')
 }
 
+function clearInputFields(...ids) {
+    ids.forEach(id => {
+        document.getElementById(id).value = '';
+    });
+}

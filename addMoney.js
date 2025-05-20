@@ -26,10 +26,9 @@ document.getElementById('btnAddMoney').addEventListener('click', function (event
         const currentBalance = getTextFeildById('current-balance')
         console.log(currentBalance);
 
-        if (addMoneyField > 100000) {
-            alert('itna paisa hum tumko nehi denge, ab vago ehase')
-            return;
-        }
+
+
+
 
         // step 5: add new amount to current balance 
 
@@ -37,7 +36,10 @@ document.getElementById('btnAddMoney').addEventListener('click', function (event
         const totalUpdatedBalance = addMoneyField + currentBalance;
         console.log(totalUpdatedBalance);
 
-
+        if (totalUpdatedBalance > 100000) {
+            alert('itna paisa hum tumko nehi denge, ab vago ehase')
+            return;
+        }
         //update the balance by dom in available balance
         document.getElementById('current-balance').innerText = totalUpdatedBalance;
 
@@ -52,6 +54,13 @@ document.getElementById('btnAddMoney').addEventListener('click', function (event
         </div>
                 `
         document.getElementById('transiction-container').appendChild(div)
+
+
+        // Clear input fields after successful transaction
+
+        // ★ Dynamic Field Clearing ★
+        clearInputFields('add-money-field', 'add-pin-field');
+
 
     } else {
         alert('wrong ammount or pin')

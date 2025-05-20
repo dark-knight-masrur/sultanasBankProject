@@ -51,6 +51,11 @@ document.getElementById('btnCashout').addEventListener('click', function (event)
                 `
         document.getElementById('transiction-container').appendChild(div)
 
+
+        // Clear input fields after successful transaction
+
+        // ★ Dynamic Field Clearing ★
+        clearInputFields('cashout-field', 'cashout-pin-field');
     } else {
         alert('wrong ammount or pin')
     }
